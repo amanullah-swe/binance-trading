@@ -1,0 +1,13 @@
+{
+  "rsi_oversold": 31.0,
+  "rsi_overbought": 68.0,
+  "take_profit_pct": 1.2,
+  "stop_loss_pct": 0.9,
+  "trailing_stop_pct": 0.5,
+  "min_confirmation_score": 2,
+  "consecutive_losses": 1,
+  "consecutive_wins": 0,
+  "total_pnl_usd": -1.05,
+  "win_rate_pct": 0.0,
+  "last_learning_update": "2026-10-07T16:51:27.162693+00:00"
+}

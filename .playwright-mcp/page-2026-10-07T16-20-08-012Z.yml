@@ -1,0 +1,350 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link:
+      - /url: /
+      - img [ref=e3] [cursor=pointer]
+    - generic [ref=e5]: Spot Test Network
+  - main [ref=e7]:
+    - generic [ref=e8]:
+      - heading "Authenticate" [level=1] [ref=e9]
+      - paragraph [ref=e10]:
+        - link "Log In with GitHub" [ref=e11] [cursor=pointer]:
+          - /url: https://github.com/login/oauth/authorize?client_id=e14c5b9326d12cf1032e&state=bb0f2916b7c5b3c909decb3179a46feb
+    - generic [ref=e12]:
+      - heading "Changelog" [level=1] [ref=e13]
+      - paragraph [ref=e14]:
+        - text: See the
+        - link "Testnet documentation" [ref=e15] [cursor=pointer]:
+          - /url: https://developers.binance.com/en/docs/products/spot/testnet/CHANGELOG
+        - text: .
+    - generic [ref=e16]:
+      - heading "F.A.Q." [level=1] [ref=e17]
+      - heading "How can I use the Spot Test Network?" [level=3] [ref=e18]
+      - paragraph [ref=e19]: "Step 1: Log in on this website, and generate an API Key."
+      - paragraph [ref=e20]:
+        - text: "Step 2: Follow the"
+        - link "official documentation of the Spot API" [ref=e21] [cursor=pointer]:
+          - /url: https://developers.binance.com/en/docs/products/spot/rest-api
+        - text: ", replacing the URLs of the endpoints with the following values:"
+      - table [ref=e22]:
+        - rowgroup [ref=e23]:
+          - row [ref=e24]:
+            - columnheader "Spot API URLs" [ref=e25]
+            - columnheader "Spot Test Network URLs" [ref=e26]
+        - rowgroup [ref=e27]:
+          - row [ref=e28]:
+            - cell [ref=e29]:
+              - list [ref=e30]:
+                - listitem [ref=e31]: https://api.binance.com/api
+                - listitem [ref=e32]: https://api-gcp.binance.com/api
+                - listitem [ref=e33]: https://api1.binance.com/api
+                - listitem [ref=e34]: https://api2.binance.com/api
+                - listitem [ref=e35]: https://api3.binance.com/api
+                - listitem [ref=e36]: https://api4.binance.com/api
+            - cell [ref=e37]:
+              - list [ref=e38]:
+                - listitem [ref=e39]:
+                  - strong [ref=e40]: https://testnet.binance.vision/api
+          - row [ref=e41]:
+            - cell [ref=e42]:
+              - list [ref=e43]:
+                - listitem [ref=e44]: wss://ws-api.binance.com/ws-api/v3
+                - listitem [ref=e45]: wss://ws-api.binance.com:9443/ws-api/v3
+            - cell [ref=e46]:
+              - list [ref=e47]:
+                - listitem [ref=e48]:
+                  - strong [ref=e49]: wss://ws-api.testnet.binance.vision/ws-api/v3
+                - listitem [ref=e50]:
+                  - strong [ref=e51]: wss://ws-api.testnet.binance.vision:9443/ws-api/v3
+          - row [ref=e52]:
+            - cell [ref=e53]:
+              - list [ref=e54]:
+                - listitem [ref=e55]: wss://stream.binance.com/ws
+                - listitem [ref=e56]: wss://stream.binance.com:9443/ws
+            - cell [ref=e57]:
+              - list [ref=e58]:
+                - listitem [ref=e59]:
+                  - strong [ref=e60]: wss://stream.testnet.binance.vision/ws
+                - listitem [ref=e61]:
+                  - strong [ref=e62]: wss://stream.testnet.binance.vision:9443/ws
+          - row [ref=e63]:
+            - cell [ref=e64]:
+              - list [ref=e65]:
+                - listitem [ref=e66]: wss://stream.binance.com/stream
+                - listitem [ref=e67]: wss://stream.binance.com:9443/stream
+            - cell [ref=e68]:
+              - list [ref=e69]:
+                - listitem [ref=e70]:
+                  - strong [ref=e71]: wss://stream.testnet.binance.vision/stream
+                - listitem [ref=e72]:
+                  - strong [ref=e73]: wss://stream.testnet.binance.vision:9443/stream
+          - row [ref=e74]:
+            - cell [ref=e75]:
+              - list [ref=e76]:
+                - listitem [ref=e77]: wss://stream-sbe.binance.com/ws
+                - listitem [ref=e78]: wss://stream-sbe.binance.com:9443/ws
+            - cell [ref=e79]:
+              - list [ref=e80]:
+                - listitem [ref=e81]:
+                  - strong [ref=e82]: wss://stream-sbe.testnet.binance.vision/ws
+                - listitem [ref=e83]:
+                  - strong [ref=e84]: wss://stream-sbe.testnet.binance.vision:9443/ws
+          - row [ref=e85]:
+            - cell [ref=e86]:
+              - list [ref=e87]:
+                - listitem [ref=e88]: wss://stream-sbe.binance.com/stream
+                - listitem [ref=e89]: wss://stream-sbe.binance.com:9443/stream
+            - cell [ref=e90]:
+              - list [ref=e91]:
+                - listitem [ref=e92]:
+                  - strong [ref=e93]: wss://stream-sbe.testnet.binance.vision/stream
+                - listitem [ref=e94]:
+                  - strong [ref=e95]: wss://stream-sbe.testnet.binance.vision:9443/stream
+          - row [ref=e96]:
+            - cell [ref=e97]:
+              - list [ref=e98]:
+                - listitem [ref=e99]: FIX in, FIX out:tcp+tls://fix-oe.binance.com:9000
+                - listitem [ref=e100]: FIX in, SBE out:tcp+tls://fix-oe.binance.com:9001
+                - listitem [ref=e101]: SBE in, SBE out:tcp+tls://fix-oe.binance.com:9002
+            - cell [ref=e102]:
+              - list [ref=e103]:
+                - listitem [ref=e104]:
+                  - strong [ref=e105]: FIX in, FIX out:tcp+tls://fix-oe.testnet.binance.vision:9000
+                - listitem [ref=e106]:
+                  - strong [ref=e107]: FIX in, SBE out:tcp+tls://fix-oe.testnet.binance.vision:9001
+                - listitem [ref=e108]:
+                  - strong [ref=e109]: SBE in, SBE out:tcp+tls://fix-oe.testnet.binance.vision:9002
+          - row [ref=e110]:
+            - cell [ref=e111]:
+              - list [ref=e112]:
+                - listitem [ref=e113]: FIX in, FIX out:tcp+tls://fix-dc.binance.com:9000
+                - listitem [ref=e114]: FIX in, SBE out:tcp+tls://fix-dc.binance.com:9001
+                - listitem [ref=e115]: SBE in, SBE out:tcp+tls://fix-dc.binance.com:9002
+            - cell [ref=e116]:
+              - list [ref=e117]:
+                - listitem [ref=e118]:
+                  - strong [ref=e119]: FIX in, FIX out:tcp+tls://fix-dc.testnet.binance.vision:9000
+                - listitem [ref=e120]:
+                  - strong [ref=e121]: FIX in, SBE out:tcp+tls://fix-dc.testnet.binance.vision:9001
+                - listitem [ref=e122]:
+                  - strong [ref=e123]: SBE in, SBE out:tcp+tls://fix-dc.testnet.binance.vision:9002
+          - row [ref=e124]:
+            - cell [ref=e125]:
+              - list [ref=e126]:
+                - listitem [ref=e127]: FIX in, FIX out:tcp+tls://fix-md.binance.com:9000
+                - listitem [ref=e128]: FIX in, SBE out:tcp+tls://fix-md.binance.com:9001
+                - listitem [ref=e129]: SBE in, SBE out:tcp+tls://fix-md.binance.com:9002
+            - cell [ref=e130]:
+              - list [ref=e131]:
+                - listitem [ref=e132]:
+                  - strong [ref=e133]: FIX in, FIX out:tcp+tls://fix-md.testnet.binance.vision:9000
+                - listitem [ref=e134]:
+                  - strong [ref=e135]: FIX in, SBE out:tcp+tls://fix-md.testnet.binance.vision:9001
+                - listitem [ref=e136]:
+                  - strong [ref=e137]: SBE in, SBE out:tcp+tls://fix-md.testnet.binance.vision:9002
+      - paragraph
+      - separator [ref=e138]
+      - heading [level=3] [ref=e139]:
+        - text: Can I use the
+        - code [ref=e140]: /sapi
+        - text: endpoints on the Spot Test Network?
+      - paragraph [ref=e141]:
+        - text: No, only the
+        - code [ref=e142]: /api
+        - text: endpoints are available on the Spot Test Network.
+      - separator [ref=e143]
+      - heading "How to get funds in/out of the Spot Test Network?" [level=3] [ref=e144]
+      - paragraph [ref=e145]: All users registering on the Spot Test Network automatically receive a balance in many different assets. Please note that these are not real assets and can be used only on the Spot Test Network itself.
+      - paragraph [ref=e146]: All funds on the Spot Test Network are virtual, and can not be transferred in/out of the Spot Test Network.
+      - separator [ref=e147]
+      - heading "What are the restrictions on the Spot Test Network?" [level=3] [ref=e148]
+      - paragraph [ref=e149]:
+        - strong [ref=e150]: IP Limits
+        - text: ","
+        - strong [ref=e151]: Order Rate Limits
+        - text: ","
+        - strong [ref=e152]: Exchange Filters
+        - text: and
+        - strong [ref=e153]: Symbol Filters
+        - text: on the Spot Test Network are generally the same as on the Spot API.
+      - paragraph [ref=e154]:
+        - text: All users are encouraged to regularly query the API to get the most up-to-date rate limits & filters, by querying the
+        - code [ref=e155]: GET /api/v3/exchangeInfo
+        - text: endpoint.
+      - separator [ref=e156]
+      - heading "All my data has disappeared! What happened?" [level=3] [ref=e157]
+      - paragraph [ref=e158]: The Spot Test Network is periodically reset to a blank state. That includes all pending and executed orders. During that reset procedure, all users automatically receive a fresh allowance of all assets.
+      - paragraph [ref=e159]:
+        - text: These resets happen approximately
+        - strong [ref=e160]: once per month
+        - text: ", and we do not offer prior notification for them."
+      - separator [ref=e161]
+      - heading [level=3] [ref=e162]:
+        - text: What is the difference between
+        - code [ref=e163]: GET /api/v3/klines
+        - text: and
+        - code [ref=e164]: GET /api/v3/uiKlines
+        - text: "?"
+      - paragraph [ref=e165]: On the Spot Test Network, these 2 endpoints always return the same data.
+      - separator [ref=e166]
+      - heading "What are RSA API Keys?" [level=3] [ref=e167]
+      - paragraph [ref=e168]: RSA API Keys are an alternative to the typical HMAC-SHA-256 API Keys that are used to authenticate your requests on the Spot API.
+      - paragraph [ref=e169]: Unlike HMAC-SHA-256 API Keys where we generate the secret signing key for you, with RSA API Keys, *you* generate a pair of public+private RSA keys, send us the public key, and sign your requests with your private key.
+      - separator [ref=e170]
+      - heading "What type of RSA keys are supported?" [level=3] [ref=e171]
+      - paragraph [ref=e172]:
+        - text: We support RSA keys of any length from 2048 bits up to 4096 bits. We recommend
+        - strong [ref=e173]: 2048 bits keys
+        - text: as a good balance between security and signature speed.
+      - paragraph [ref=e174]:
+        - text: When generating the RSA signature, use the
+        - strong [ref=e175]: PKCS#1 v1.5
+        - text: signature scheme. This is the default when using OpenSSL. We currently do not support the PSS signature scheme.
+      - separator [ref=e176]
+      - heading "How can I use RSA API Keys?" [level=3] [ref=e177]
+      - paragraph [ref=e178]:
+        - text: "Step 1: Generate the private key"
+        - code [ref=e179]: test-prv-key.pem
+        - text: .
+        - strong [ref=e180]: Do not share this file with anyone!
+      - generic [ref=e181]: openssl genrsa -out test-prv-key.pem 2048
+      - paragraph [ref=e182]:
+        - text: "Step 2: Generate the public key"
+        - code [ref=e183]: test-pub-key.pem
+        - text: from the private key.
+      - generic [ref=e184]: openssl rsa -in test-prv-key.pem -pubout -outform PEM -out test-pub-key.pem
+      - paragraph [ref=e185]: "The public key should look something like this:"
+      - generic [ref=e186]: "-----BEGIN PUBLIC KEY----- bL4DUXwR3ijFSXzcecQtVFU1zVWcSQd0Meztl3DLX42l/8EALJx3LSz9YKS0PMQW MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAv9ij99RAJM4JLl8Rg47b dJXMrv84WL1OK/gid4hCnxo083LYLXUpIqMmL+O6fmXAvsvkyMyT520Cw0ZNCrUk WoCjGE4JZZGF4wOkWdF37JFWbDnE/GF5mAykKj+OMaECBlZ207KleQqgVzHjKuCb hPMuBVVD3IhjBfIc7EEM438LbtayMDx4dviPWwm127jwn8qd9H3kv5JBoDfsdYMB 3k39r724CljqlAfX33GpbV2LvEkL6Da3OFk+grfN98X2pCBRz5+1N95I2cRD7o+j wtCr+65E+Gqjo4OI60F9Gq5GDcrnudnUw13a4zwlU6W+Cy8gJ4R0CcKTc4+VhYVX 5wW2tzLVnDqvjIN8hjhgtmUv8hr19Wn+42ev+5sNtO5QAS6sJMJG5D+cpxCNhei1 Xm+1zXliaA1fvVYRqon2MdHcedFeAjzVtX38+Xweytowydcq2V/9pUUNZIzUqX7t Zr3F+Ao3QOb/CuWbUBpUcbXfGv7AI1ozP8LRByyu6O8Z1dZNdkdjWVt83maUrIJH jjc7jlZY9JbH6EyYV5TenjJaupvdlx72vA7Fcgevx87seog2JALAJqZQNT+t9/tm rTUSEp3t4aINKUC1QC0CYKECAwEAAQ== -----END PUBLIC KEY-----"
+      - paragraph [ref=e187]: "Step 3: Register your public key on the Spot Test Network."
+      - paragraph [ref=e188]:
+        - text: During registration, we will generate an API Key for you that you will have to put in the
+        - code [ref=e189]: X-MBX-APIKEY
+        - text: header of your requests, exactly the same way as you would do for HMAC-SHA-256 API Keys.
+      - paragraph [ref=e190]: "Step 4: When you send a request to the Spot Test Network, sign the payload using your private key."
+      - paragraph [ref=e191]: "Here is an example Bash script to post a new order and sign the request using OpenSSL. You can adapt it to your favorite programming language:"
+      - generic [ref=e192]:
+        - generic [ref=e193]: "#!/usr/bin/env bash"
+        - generic [ref=e196]: "# Set up authentication:"
+        - generic [ref=e198]: API_KEY="put your own API Key here"
+        - generic [ref=e200]: PRIVATE_KEY_PATH="test-prv-key.pem"
+        - generic [ref=e203]: "# Set up the request:"
+        - generic [ref=e205]: API_METHOD="POST"
+        - generic [ref=e207]: API_CALL="v3/order"
+        - generic [ref=e209]: API_PARAMS="symbol=BTCUSDT&side=SELL&type=LIMIT&timeInForce=GTC&quantity=1&price=0.2"
+        - generic [ref=e212]: "# Sign the request:"
+        - generic [ref=e214]: timestamp=$(date +%s000)
+        - generic [ref=e216]: api_params_with_timestamp="$API_PARAMS&timestamp=$timestamp"
+        - generic [ref=e218]: signature=$(echo -n "$api_params_with_timestamp" \
+        - generic [ref=e220]: "| openssl dgst -sha256 -sign \"$PRIVATE_KEY_PATH\" \\"
+        - generic [ref=e222]: "| openssl enc -base64 -A)"
+        - generic [ref=e225]: "# Send the request:"
+        - generic [ref=e227]: "curl -H \"X-MBX-APIKEY: $API_KEY\" -X \"$API_METHOD\" \\"
+        - generic [ref=e229]: "\"https://testnet.binance.vision/api/$API_CALL?$api_params_with_timestamp\" \\"
+        - generic [ref=e231]: "--data-urlencode \"signature=$signature\""
+      - separator [ref=e233]
+      - heading "What are Ed25519 API keys?" [level=3] [ref=e234]
+      - paragraph [ref=e235]:
+        - text: Ed25519 API keys are an alternative to
+        - link "RSA API keys" [ref=e236] [cursor=pointer]:
+          - /url: "#faq-rsa-keys"
+        - text: ", using asymmetric cryptography to authenticate your requests on the Spot API."
+      - paragraph [ref=e237]:
+        - text: Like RSA API keys, Ed25519 keys are
+        - emphasis [ref=e238]: asymmetric
+        - text: ": you generate a keypair, share the public key with Binance, and use your private key to sign requests."
+      - separator [ref=e239]
+      - heading "Why use Ed25519 instead of RSA API keys?" [level=3] [ref=e240]
+      - paragraph [ref=e241]: "Ed25519 digital signature scheme provides security comparable to 3072-bit RSA keys, while having much smaller signatures that are faster to compute:"
+      - table [ref=e242]:
+        - rowgroup [ref=e243]:
+          - row [ref=e244]:
+            - columnheader "API key type" [ref=e245]
+            - columnheader "Signature size" [ref=e246]
+            - columnheader "Signature operation" [ref=e247]
+        - rowgroup [ref=e248]:
+          - row [ref=e249]:
+            - cell "HMAC-SHA-256" [ref=e250]
+            - cell "64 bytes" [ref=e251]
+            - cell "0.00 ms" [ref=e252]
+          - row [ref=e253]:
+            - cell "Ed25519" [ref=e254]
+            - cell "88 bytes" [ref=e255]
+            - cell "0.03 ms" [ref=e256]
+          - row [ref=e257]:
+            - cell "RSA (2048-bit)" [ref=e258]
+            - cell "344 bytes" [ref=e259]
+            - cell "0.55 ms" [ref=e260]
+          - row [ref=e261]:
+            - cell "RSA (4096-bit)" [ref=e262]
+            - cell "684 bytes" [ref=e263]
+            - cell "3.42 ms" [ref=e264]
+      - separator [ref=e265]
+      - heading "How can I use Ed25519 API keys?" [level=3] [ref=e266]
+      - paragraph [ref=e267]:
+        - text: "Step 1: Generate the private key"
+        - code [ref=e268]: test-prv-key.pem
+        - text: .
+        - strong [ref=e269]: Do not share this file with anyone!
+      - generic [ref=e270]: openssl genpkey -algorithm ed25519 -out test-prv-key.pem
+      - paragraph [ref=e271]:
+        - text: "Step 2: Compute the public key"
+        - code [ref=e272]: test-pub-key.pem
+        - text: from the private key.
+      - generic [ref=e273]: openssl pkey -pubout -in test-prv-key.pem -out test-pub-key.pem
+      - paragraph [ref=e274]: "The public key should look something like this:"
+      - generic [ref=e275]: "-----BEGIN PUBLIC KEY----- MCowBQYDK2VwAyEACeCSz7VJkh3Bb+NF794hLMU8fLB9Zr+/tGMdVKCC2eo= -----END PUBLIC KEY-----"
+      - paragraph [ref=e276]: "Step 3: Register your public key on the Spot Test Network."
+      - paragraph [ref=e277]:
+        - text: During registration, we will generate an API key for you. Please put it in the
+        - code [ref=e278]: X-MBX-APIKEY
+        - text: header of your requests, exactly the same way as with other API key types.
+      - paragraph [ref=e279]: "Step 4: When you send a request to the Spot Test Network, sign the payload using your private key."
+      - paragraph [ref=e280]: Here is an example in Python that posts a new order signed with Ed25519 key. You can adapt it to your favorite programming language.
+      - code [ref=e282]:
+        - generic [ref=e283]: "#!/usr/bin/env python3"
+        - generic [ref=e286]: import base64
+        - generic [ref=e288]: import requests
+        - generic [ref=e290]: import time
+        - generic [ref=e292]: import urllib.parse
+        - generic [ref=e294]: from cryptography.hazmat.primitives.serialization import load_pem_private_key
+        - generic [ref=e297]: "# Set up authentication"
+        - generic [ref=e299]: API_KEY='put your own API Key here'
+        - generic [ref=e301]: PRIVATE_KEY_PATH='test-prv-key.pem'
+        - generic [ref=e304]: "# Load the private key."
+        - generic [ref=e306]: "# In this example the key is expected to be stored without encryption,"
+        - generic [ref=e308]: "# but we recommend using a strong password for improved security."
+        - generic [ref=e310]: "with open(PRIVATE_KEY_PATH, 'rb') as f:"
+        - generic [ref=e312]: private_key = load_pem_private_key(data=f.read(), password=None)
+        - generic [ref=e315]: "# Set up the request parameters"
+        - generic [ref=e317]: "params = {"
+        - generic [ref=e319]: "'symbol': 'BTCUSDT',"
+        - generic [ref=e321]: "'side': 'SELL',"
+        - generic [ref=e323]: "'type': 'LIMIT',"
+        - generic [ref=e325]: "'timeInForce': 'GTC',"
+        - generic [ref=e327]: "'quantity': '1.0000000',"
+        - generic [ref=e329]: "'price': '0.20',"
+        - generic [ref=e331]: "}"
+        - generic [ref=e334]: "# Timestamp the request"
+        - generic [ref=e336]: "timestamp = int(time.time() * 1000) # UNIX timestamp in milliseconds"
+        - generic [ref=e338]: params['timestamp'] = timestamp
+        - generic [ref=e341]: "# Sign the request"
+        - generic [ref=e343]: payload = urllib.parse.urlencode(params, encoding='UTF-8')
+        - generic [ref=e345]: signature = base64.b64encode(private_key.sign(payload.encode('ASCII')))
+        - generic [ref=e347]: params['signature'] = signature
+        - generic [ref=e350]: "# Send the request"
+        - generic [ref=e352]: "headers = {"
+        - generic [ref=e354]: "'X-MBX-APIKEY': API_KEY,"
+        - generic [ref=e356]: "}"
+        - generic [ref=e358]: response = requests.post(
+        - generic [ref=e360]: "'https://testnet.binance.vision/api/v3/order',"
+        - generic [ref=e362]: headers=headers,
+        - generic [ref=e364]: data=params,
+        - generic [ref=e366]: )
+        - generic [ref=e368]: print(response.json())
+  - contentinfo [ref=e370]:
+    - link "Terms" [ref=e371] [cursor=pointer]:
+      - /url: /terms
+    - text: "|"
+    - link "Privacy" [ref=e372] [cursor=pointer]:
+      - /url: /privacy
+    - text: "| © 2026 Binance.com - All rights reserved"

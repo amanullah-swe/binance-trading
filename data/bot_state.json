@@ -1,0 +1,47 @@
+{
+  "status": "RUNNING",
+  "pid": 402033,
+  "symbol": "BTCUSDT",
+  "mode": "dynamic_fng",
+  "base_amount_usdt": 50.0,
+  "interval_seconds": 60,
+  "current_price": 83470.01,
+  "current_fng": 71,
+  "fng_classification": "Greed",
+  "base_asset": "BTC",
+  "quote_asset": "USDT",
+  "base_balance": 0.001768,
+  "quote_balance": 4852.13,
+  "total_invested_usdt": 98.55,
+  "total_coins_bought": 0.00118,
+  "avg_cost_basis": 83517.01,
+  "current_portfolio_value_usdt": 147.59,
+  "unrealized_pnl_usdt": 49.04,
+  "unrealized_pnl_pct": 49.77,
+  "total_trades": 2,
+  "last_heartbeat": "2026-10-07T16:38:26.652626+00:00",
+  "trades": [
+    {
+      "order_id": 71137909481,
+      "timestamp": "2026-10-07T16:36:27.044211+00:00",
+      "side": "BUY",
+      "symbol": "BTCUSDT",
+      "qty": 0.00059,
+      "price": 83554.01,
+      "cost_usdt": 49.2968659,
+      "fng_value": 71,
+      "reason": "Standard DCA Buy (F&G=71) -> 1x buy ($50.00 USDT)"
+    },
+    {
+      "order_id": 71138266509,
+      "timestamp": "2026-10-07T16:38:14.456941+00:00",
+      "side": "BUY",
+      "symbol": "BTCUSDT",
+      "qty": 0.00059,
+      "price": 83480.01,
+      "cost_usdt": 49.2532059,
+      "fng_value": 71,
+      "reason": "Standard DCA Buy (F&G=71) -> 1x buy ($50.00 USDT)"
+    }
+  ]
+}

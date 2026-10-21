@@ -1,0 +1,22 @@
+[
+  {
+    "trade_id": 1,
+    "symbol": "BTCUSDT",
+    "qty": 0.00176,
+    "entry_price": 83464.0,
+    "exit_price": 83424.0,
+    "cost_usdt": 147.58,
+    "revenue_usdt": 146.83,
+    "total_fees_usdt": 0.2944,
+    "net_pnl_usdt": -1.05,
+    "net_pnl_pct": -0.71,
+    "is_win": false,
+    "exit_reason": "MANUAL_COMMAND_SELL_ALL",
+    "entry_time": "2026-10-07T16:40:03.239625+00:00",
+    "exit_time": "2026-10-07T16:51:27.162076+00:00",
+    "entry_indicators": {},
+    "exit_indicators": {
+      "exit_price": 83424.0
+    }
+  }
+]
